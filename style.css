@@ -1,0 +1,121 @@
+/* style.css */
+
+ :root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #e0e0e0;
+  --accent-color: #ff8c69; /* Sunset Orange */
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --dark-primary-color: #333;
+  --dark-secondary-color: #444;
+  --dark-text-color: #f2f2f2;
+  --dark-shadow-color: rgba(255, 255, 255, 0.1);
+ }
+ 
+ [data-theme="dark"] {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --text-color: #f2f2f2;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+ }
+ 
+ body {
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .neumorphic {
+  background-color: var(--primary-color);
+  box-shadow: 6px 6px 12px var(--shadow-color),
+  -6px -6px 12px var(--secondary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+ }
+ 
+ /* Header Styles */
+ header {
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+ 
+ /* Main Content Styles */
+ main {
+  padding: 1rem;
+ }
+ 
+ /* Section Styles */
+ section {
+  margin-bottom: 2rem;
+ }
+ 
+ section h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+ }
+ 
+ /* Card Styles */
+ .card {
+  border: none;
+  border-radius: 10px;
+ }
+ 
+ /* Form Styles */
+ .form-control,
+ .form-select {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+ }
+ 
+ .form-control:focus,
+ .form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: none;
+ }
+ 
+ .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+ }
+ 
+ .btn-primary:hover {
+  background-color: #e67350;
+  border-color: #e67350;
+ }
+ 
+ /* Footer Styles */
+ footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+ }
+ 
+ /* Dark Mode Toggle */
+ #darkModeToggle {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ #darkModeToggle:hover {
+  background-color: var(--secondary-color);
+ }
+ 
+ /* Responsive Design */
+ @media (min-width: 768px) {
+  main {
+  padding: 2rem;
+  }
+ }
+ 
+ /* Animations */
+ .btn {
+  transition: transform 0.2s ease-in-out;
+ }
+ 
+ .btn:hover {
+  transform: scale(1.05);
+ }
