@@ -60,6 +60,7 @@
  .card {
   border: none;
   border-radius: 10px;
+  color: grey;
  }
  
  /* Form Styles */

@@ -4,7 +4,7 @@
 This project implements a simple Intermittent Fasting Tracker using JavaScript, HTML, and CSS. It allows users to select a pre-defined fasting plan or create a custom one, track their fasting time, monitor water intake, and receive motivational tips. The core functionalities include starting and stopping the timer, managing user inputs for custom plans, updating the UI with real-time data, and toggling dark mode.
 
 ## Output
-<iframe src="https://niat-web.github.io/Intermittent_Fasting_Tracker" height="1000" width="300" title="Intermittent_Fasting_Tracker"></iframe>
+<iframe src="https://niat-web.github.io/Intermittent_Fasting_Tracker/" height="1000" width="300" title="Intermittent_Fasting_Tracker"></iframe>
 
 ## Project Requirements
 **Technologies:** HTML, CSS, JavaScript
